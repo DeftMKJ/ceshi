@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rI8-Vp-6Om">
+                                <rect key="frame" x="47" y="403" width="300" height="31"/>
+                                <connections>
+                                    <action selector="valueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="z96-Dz-rL0"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aO0-rJ-ycp">
+                                <rect key="frame" x="36" y="148" width="296" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oq4-wK-XIf">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="128"/>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4o-NK-02R">
+                                        <rect key="frame" x="148" y="0.0" width="148" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.074662476259999999" blue="0.15563673829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Oq4-wK-XIf" firstAttribute="top" secondItem="aO0-rJ-ycp" secondAttribute="top" id="1rd-CG-BXl"/>
+                                    <constraint firstItem="Oq4-wK-XIf" firstAttribute="width" secondItem="aO0-rJ-ycp" secondAttribute="width" multiplier="0.5" id="8az-xy-Jvt"/>
+                                    <constraint firstItem="d4o-NK-02R" firstAttribute="width" secondItem="aO0-rJ-ycp" secondAttribute="width" multiplier="0.5" id="KEc-is-yGP"/>
+                                    <constraint firstAttribute="height" constant="128" id="N2L-Ot-3K6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oq4-wK-XIf" secondAttribute="bottom" id="YQX-yW-ZP5"/>
+                                    <constraint firstItem="Oq4-wK-XIf" firstAttribute="leading" secondItem="aO0-rJ-ycp" secondAttribute="leading" id="ZhV-mH-kZ8"/>
+                                    <constraint firstAttribute="width" constant="296" id="cr9-6e-fSp"/>
+                                    <constraint firstItem="d4o-NK-02R" firstAttribute="top" secondItem="aO0-rJ-ycp" secondAttribute="top" id="ea2-8r-XwF"/>
+                                    <constraint firstAttribute="bottom" secondItem="d4o-NK-02R" secondAttribute="bottom" id="wdb-TL-aEp"/>
+                                    <constraint firstItem="d4o-NK-02R" firstAttribute="leading" secondItem="Oq4-wK-XIf" secondAttribute="trailing" id="zPx-1E-MoG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aO0-rJ-ycp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="4h5-rj-usl"/>
+                            <constraint firstItem="aO0-rJ-ycp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="128" id="int-qW-ckR"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="totalWidth" destination="cr9-6e-fSp" id="YQP-sD-D9W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385.5" y="406.5"/>
+        </scene>
+    </scenes>
+</document>
